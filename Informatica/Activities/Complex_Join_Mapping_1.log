@@ -1,0 +1,301 @@
+Agent Group Id: 025000000000002
+Agent Group Name: Informatica Cloud Hosted Agent
+Agent Id: 00800000000005H
+Task Name: Complex_Join_Mapping
+Task Type: MTT_TEST
+Task Id: 012MMN0Z000000000005
+Run Id: 1
+Service Id: 1530328
+Started By: kumar.amitav1@ibm.com
+Run Context Type: ICS_UI
+06/28/2024 01:22:52 **** Importing Connection: Conn_012MMN0B000000000002 ...
+06/28/2024 01:22:52 **** Importing Source Definition: Books ...
+06/28/2024 01:22:52 **** Importing Source Definition: Authors ...
+06/28/2024 01:22:52 **** Importing Source Definition: Editors ...
+06/28/2024 01:22:52 **** Importing Target Definition: Amitav_Books ...
+06/28/2024 01:22:52 **** Importing SessionConfig: default_session_config ...
+    <Warning> :  The Error Log DB Connection value should have Relational: as the prefix.
+    <Warning> :  Invalid value  for attribute Error Log DB Connection. Will use the default value 
+    Validating Source Definition  Editors...
+    Validating Source Definition  Authors...
+    Validating Source Definition  Books...
+    Validating Target Definition  Amitav_Books...
+06/28/2024 01:22:52 **** Importing Mapping: Mapping0 ...
+    <Warning> :  transformation: Book - Invalid value  for attribute Output is repeatable. Will use the default value Never    [transformation< Book > ] 
+    <Warning> :  transformation: Authors - Invalid value  for attribute Output is repeatable. Will use the default value Never    [transformation< Authors > ] 
+    <Warning> :  transformation: Editors - Invalid value  for attribute Output is repeatable. Will use the default value Never    [transformation< Editors > ] 
+Validating transformations of mapping Mapping0...
+Validating mapping variable(s).
+06/28/2024 01:22:52 **** Importing Workflow: wf_mtt_012MMN0Z000000000005 ...
+    <Warning> :  Invalid value None for attribute Pushdown Optimization Context. Will use the default value None     [Session< s_mtt_012MMN0Z000000000005 > ] 
+    <Warning> :  The value entered is not a valid integer.
+    <Warning> :  Invalid value NO for attribute Fail task after wait time. Will use the default value 
+Successfully extracted session instance [s_mtt_012MMN0Z000000000005].  Starting repository sequence id is [793007542]
+DIRECTOR> VAR_27085 [2024-06-28 01:22:52.321] Parameter file [/data2/home/cldagnt/SystemAgent/apps/Data_Integration_Server/data/012MMN0E00000000005P/012MMN/parameters/s_mtt_012MMN0Z000000000005.param] is opened for [session [wf_mtt_012MMN0Z000000000005.s_mtt_012MMN0Z000000000005]].
+DIRECTOR> VAR_27062 [2024-06-28 01:22:52.321] Warning! Cannot find section for worklet [wf_mtt_012MMN0Z000000000005] and folder [] in parameter file [/data2/home/cldagnt/SystemAgent/apps/Data_Integration_Server/data/012MMN0E00000000005P/012MMN/parameters/s_mtt_012MMN0Z000000000005.param].
+DIRECTOR> TM_6014 [2024-06-28 01:22:52.321] Initializing session [s_mtt_012MMN0Z000000000005] at [Fri Jun 28 01:22:52 2024].
+DIRECTOR> TM_6683 [2024-06-28 01:22:52.321] Repository Name: [XMLRepository]
+DIRECTOR> TM_6684 [2024-06-28 01:22:52.321] Server Name: [rDTM]
+DIRECTOR> TM_6686 [2024-06-28 01:22:52.321] Folder: []
+DIRECTOR> TM_6685 [2024-06-28 01:22:52.321] Workflow: [wf_mtt_012MMN0Z000000000005] Run Instance Name: [] Run Id: [0]
+DIRECTOR> TM_6992 [2024-06-28 01:22:52.321] Operating System Type [Linux]
+DIRECTOR> TM_6101 [2024-06-28 01:22:52.321] Mapping name: Mapping0.
+DIRECTOR> TM_6964 [2024-06-28 01:22:52.322] Date format for the Session is [MM/DD/YYYY HH24:MI:SS.US]
+DIRECTOR> TM_6703 [2024-06-28 01:22:52.322] Session [s_mtt_012MMN0Z000000000005] is run by 64-bit Integration Service  [], version [10.2.0 HotFix2], build [0320].
+MANAGER> PETL_24091 [2024-06-28 01:22:52.333] Thread [MANAGER] has the ID [1].
+MANAGER> PETL_24058 [2024-06-28 01:22:52.333] Running Partition Group [1].
+MANAGER> PETL_24000 [2024-06-28 01:22:52.333] Parallel Pipeline Engine initializing.
+MONITOR> PETL_24091 [2024-06-28 01:22:52.334] Thread [MONITOR] has the ID [2].
+MANAGER> PETL_24001 [2024-06-28 01:22:52.334] Parallel Pipeline Engine running.
+MANAGER> PETL_24003 [2024-06-28 01:22:52.334] Initializing session run.
+MAPPING> PETL_24091 [2024-06-28 01:22:52.334] Thread [MAPPING] has the ID [3].
+MAPPING> CMN_1569 [2024-06-28 01:22:52.337] Server Mode: [UNICODE]
+MAPPING> CMN_1570 [2024-06-28 01:22:52.337] Server Code page: [ISO 8859-1 Western European]
+MAPPING> TM_6151 [2024-06-28 01:22:52.337] The session sort order is [Binary].
+MAPPING> TM_6185 [2024-06-28 01:22:52.337] Warning. Code page validation is disabled in this session.
+MAPPING> CMN_65110 [2024-06-28 01:22:52.337] Current Timezone:[UTC -5:0]
+MAPPING> CMN_65111 [2024-06-28 01:22:52.337] Current Process ID:[157130]
+MAPPING> TM_6155 [2024-06-28 01:22:52.337] Using HIGH precision processing.
+MAPPING> TM_6180 [2024-06-28 01:22:52.337] Deadlock retry logic will not be implemented.
+MAPPING> TM_6187 [2024-06-28 01:22:52.337] Session target-based commit interval is [10000].
+MAPPING> TM_6307 [2024-06-28 01:22:52.337] DTM error log disabled. 
+MAPPING> TE_7022 [2024-06-28 01:22:52.337] TShmWriter: Initialized
+MAPPING> DBG_21694 [2024-06-28 01:22:52.340] Joiner Partition [0]: Index cache size = [66268125], Data cache size = [132536250]
+MAPPING> TT_11098 [2024-06-28 01:22:52.340] The Joiner transformation [Joiner] is configured with the join algorithm: Nested-Loop.
+MAPPING> DBG_21694 [2024-06-28 01:22:52.341] Joiner1 Partition [0]: Index cache size = [66268125], Data cache size = [132536250]
+MAPPING> TT_11098 [2024-06-28 01:22:52.341] The Joiner transformation [Joiner1] is configured with the join algorithm: Nested-Loop.
+MAPPING> TM_6007 [2024-06-28 01:22:52.341] DTM initialized successfully for session [s_mtt_012MMN0Z000000000005]
+DIRECTOR> PETL_24033 [2024-06-28 01:22:52.365] All DTM Connection Info: [<NONE>].
+MANAGER> PETL_24004 [2024-06-28 01:22:52.366] Starting pre-session tasks. : (Fri Jun 28 01:22:52 2024)
+PRE-SESS> PETL_24091 [2024-06-28 01:22:52.366] Thread [PRE-SESS] has the ID [4].
+MANAGER> PETL_24027 [2024-06-28 01:22:52.368] Pre-session task completed successfully. : (Fri Jun 28 01:22:52 2024)
+DIRECTOR> PETL_24006 [2024-06-28 01:22:52.368] Starting data movement.
+MAPPING> TM_6660 [2024-06-28 01:22:52.369] Total Buffer Pool size is 9141056 bytes and Block size is 251696 bytes.
+READER_1_1_1> PETL_24091 [2024-06-28 01:22:52.370] Thread [READER_1_1_1] has the ID [5].
+READER_1_1_1> DBG_21438 [2024-06-28 01:22:52.371] Reader: Source is [odbc://dbtype=MySQL;host=db4free.net;port=3306;database=fstm4db], Type [ODBC], User [fstm4db]
+READER_1_1_1> BLKR_16051 [2024-06-28 01:22:52.373] Source database connection [Conn_012MMN0B000000000002] code page: [UTF-8 encoding of Unicode]
+READER_1_1_1> CMN_1021 [2024-06-28 01:22:52.373] Database driver event...
+CMN_1021 [Driver Manager used is [UnixODBC 2.3.4].]
+
+READER_1_1_1> CMN_1021 [2024-06-28 01:22:55.128] Database driver event...
+CMN_1021 [ODBC Event Using array fetches.
+ODBC Event Using Single Row Inserts. connect string = [Driver=MySQL ODBC 8.0 Unicode Driver;Server=db4free.net;Database=fstm4db;Port=3306;USER=fstm4db;NO_SSPS=1;stmt=set time_zone = '+00:00';Charset=UTF8;OPTION=3;SSLMODE=DISABLED]. userid = [fstm4db]
+ODBC Version:	03.52
+.
+DBMS Name:	MySQL
+.
+DBMS Version:	8.3.0
+.
+Driver Name:	libmyodbc8w.so
+.
+Driver Version:	08.00.0012
+.
+Driver ODBC Version:	03.80
+.
+MySQL rewrite batch optimization is disabled with maximum bind parameter size set to 2500.]
+
+READER_1_1_1> BLKR_16003 [2024-06-28 01:22:55.128] Initialization completed successfully.
+TRANSF_1_1_1> PETL_24091 [2024-06-28 01:22:55.128] Thread [TRANSF_1_1_1] has the ID [6].
+READER_1_2_1> PETL_24091 [2024-06-28 01:22:55.129] Thread [READER_1_2_1] has the ID [7].
+READER_1_2_1> DBG_21438 [2024-06-28 01:22:55.129] Reader: Source is [odbc://dbtype=MySQL;host=db4free.net;port=3306;database=fstm4db], Type [ODBC], User [fstm4db]
+READER_1_2_1> BLKR_16051 [2024-06-28 01:22:55.129] Source database connection [Conn_012MMN0B000000000002] code page: [UTF-8 encoding of Unicode]
+READER_1_2_1> CMN_1021 [2024-06-28 01:22:55.129] Database driver event...
+CMN_1021 [Driver Manager used is [UnixODBC 2.3.4].]
+
+READER_1_2_1> CMN_1021 [2024-06-28 01:22:57.870] Database driver event...
+CMN_1021 [ODBC Event Using array fetches.
+ODBC Event Using Single Row Inserts. connect string = [Driver=MySQL ODBC 8.0 Unicode Driver;Server=db4free.net;Database=fstm4db;Port=3306;USER=fstm4db;NO_SSPS=1;stmt=set time_zone = '+00:00';Charset=UTF8;OPTION=3;SSLMODE=DISABLED]. userid = [fstm4db]
+ODBC Version:	03.52
+.
+DBMS Name:	MySQL
+.
+DBMS Version:	8.3.0
+.
+Driver Name:	libmyodbc8w.so
+.
+Driver Version:	08.00.0012
+.
+Driver ODBC Version:	03.80
+.
+MySQL rewrite batch optimization is disabled with maximum bind parameter size set to 2500.]
+
+READER_1_2_1> BLKR_16003 [2024-06-28 01:22:57.870] Initialization completed successfully.
+TRANSF_1_2_1> PETL_24091 [2024-06-28 01:22:57.872] Thread [TRANSF_1_2_1] has the ID [8].
+READER_1_3_1> PETL_24091 [2024-06-28 01:22:57.874] Thread [READER_1_3_1] has the ID [9].
+READER_1_3_1> DBG_21438 [2024-06-28 01:22:57.874] Reader: Source is [odbc://dbtype=MySQL;host=db4free.net;port=3306;database=fstm4db], Type [ODBC], User [fstm4db]
+READER_1_3_1> BLKR_16051 [2024-06-28 01:22:57.875] Source database connection [Conn_012MMN0B000000000002] code page: [UTF-8 encoding of Unicode]
+READER_1_3_1> CMN_1021 [2024-06-28 01:22:57.875] Database driver event...
+CMN_1021 [Driver Manager used is [UnixODBC 2.3.4].]
+
+READER_1_3_1> CMN_1021 [2024-06-28 01:23:00.519] Database driver event...
+CMN_1021 [ODBC Event Using array fetches.
+ODBC Event Using Single Row Inserts. connect string = [Driver=MySQL ODBC 8.0 Unicode Driver;Server=db4free.net;Database=fstm4db;Port=3306;USER=fstm4db;NO_SSPS=1;stmt=set time_zone = '+00:00';Charset=UTF8;OPTION=3;SSLMODE=DISABLED]. userid = [fstm4db]
+ODBC Version:	03.52
+.
+DBMS Name:	MySQL
+.
+DBMS Version:	8.3.0
+.
+Driver Name:	libmyodbc8w.so
+.
+Driver Version:	08.00.0012
+.
+Driver ODBC Version:	03.80
+.
+MySQL rewrite batch optimization is disabled with maximum bind parameter size set to 2500.]
+
+READER_1_3_1> BLKR_16003 [2024-06-28 01:23:00.519] Initialization completed successfully.
+TRANSF_1_3_1> PETL_24091 [2024-06-28 01:23:00.519] Thread [TRANSF_1_3_1] has the ID [10].
+WRITER_1_*_1> PETL_24091 [2024-06-28 01:23:00.520] Thread [WRITER_1_*_1] has the ID [11].
+WRITER_1_*_1> WRT_8147 [2024-06-28 01:23:00.520] Writer: Target is Database [odbc://dbtype=MySQL;host=db4free.net;port=3306;database=fstm4db], Type [ODBC], User [fstm4db], Bulk Mode [OFF]
+WRITER_1_*_1> CMN_1021 [2024-06-28 01:23:00.520] Database driver event...
+CMN_1021 [Driver Manager used is [UnixODBC 2.3.4].]
+
+WRITER_1_*_1> CMN_1021 [2024-06-28 01:23:03.941] Database driver event...
+CMN_1021 [ODBC Event Using array fetches.
+ODBC Event Using Single Row Inserts. connect string = [Driver=MySQL ODBC 8.0 Unicode Driver;Server=db4free.net;Database=fstm4db;Port=3306;USER=fstm4db;NO_SSPS=1;stmt=set time_zone = '+00:00';Charset=UTF8;OPTION=3;SSLMODE=DISABLED]. userid = [fstm4db]
+ODBC Version:	03.52
+.
+DBMS Name:	MySQL
+.
+DBMS Version:	8.3.0
+.
+Driver Name:	libmyodbc8w.so
+.
+Driver Version:	08.00.0012
+.
+Driver ODBC Version:	03.80
+.
+MySQL rewrite batch optimization is disabled with maximum bind parameter size set to 2500.]
+
+WRITER_1_*_1> WRT_8221 [2024-06-28 01:23:04.534] Target database connection [Conn_012MMN0B000000000002] code page: [UTF-8 encoding of Unicode]
+WRITER_1_*_1> WRT_8124 [2024-06-28 01:23:04.535] Target Table Amitav_Books :SQL INSERT statement:
+INSERT INTO fstm4db.Amitav_Books(ID,FIRST_NAME,LAST_NAME,a_ID,a_FIRST_NAME,a_LAST_NAME,b_ID,b_TITLE,b_TRANSLATED,b_AUTHOR_ID,b_EDITOR_ID,b_TRANSLATOR_ID)  VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+WRITER_1_*_1> WRT_8124 [2024-06-28 01:23:04.535] Target Table Amitav_Books :SQL UPDATE statement:
+UPDATE fstm4db.Amitav_Books SET FIRST_NAME = ?, LAST_NAME = ?, a_FIRST_NAME = ?, a_LAST_NAME = ?, b_TITLE = ?, b_TRANSLATED = ?, b_AUTHOR_ID = ?, b_EDITOR_ID = ?, b_TRANSLATOR_ID = ? WHERE ID = ? AND a_ID = ? AND b_ID = ?
+WRITER_1_*_1> WRT_8124 [2024-06-28 01:23:04.535] Target Table Amitav_Books :SQL DELETE statement:
+DELETE FROM fstm4db.Amitav_Books WHERE ID = ? AND a_ID = ? AND b_ID = ?
+WRITER_1_*_1> WRT_8270 [2024-06-28 01:23:04.535] Target connection group #1 consists of target(s) [Amitav_Books]
+WRITER_1_*_1> WRT_8003 [2024-06-28 01:23:04.535] Writer initialization complete.
+READER_1_1_1> BLKR_16007 [2024-06-28 01:23:04.535] Reader run started.
+READER_1_3_1> BLKR_16007 [2024-06-28 01:23:04.535] Reader run started.
+READER_1_1_1> RR_4010 [2024-06-28 01:23:04.536] SQ instance [Editors] SQL Query [SELECT fstm4db.Editors.ID, fstm4db.Editors.FIRST_NAME, fstm4db.Editors.LAST_NAME FROM fstm4db.Editors]
+READER_1_3_1> RR_4010 [2024-06-28 01:23:04.536] SQ instance [Authors] SQL Query [SELECT fstm4db.Authors.ID, fstm4db.Authors.FIRST_NAME, fstm4db.Authors.LAST_NAME FROM fstm4db.Authors]
+READER_1_1_1> RR_4049 [2024-06-28 01:23:04.536] SQL Query issued to database : (Fri Jun 28 01:23:04 2024)
+READER_1_3_1> RR_4049 [2024-06-28 01:23:04.536] SQL Query issued to database : (Fri Jun 28 01:23:04 2024)
+READER_1_2_1> BLKR_16007 [2024-06-28 01:23:04.536] Reader run started.
+READER_1_2_1> RR_4010 [2024-06-28 01:23:04.536] SQ instance [Book] SQL Query [SELECT fstm4db.Books.ID, fstm4db.Books.TITLE, fstm4db.Books.TRANSLATED, fstm4db.Books.AUTHOR_ID, fstm4db.Books.EDITOR_ID, fstm4db.Books.TRANSLATOR_ID FROM fstm4db.Books]
+READER_1_2_1> RR_4049 [2024-06-28 01:23:04.536] SQL Query issued to database : (Fri Jun 28 01:23:04 2024)
+WRITER_1_*_1> WRT_8005 [2024-06-28 01:23:04.536] Writer run started.
+WRITER_1_*_1> WRT_8158 [2024-06-28 01:23:04.536] 
+
+*****START LOAD SESSION*****
+
+Load Start Time: Fri Jun 28 01:23:04 2024
+
+Target tables:
+
+     Amitav_Books
+
+
+READER_1_3_1> RR_4050 [2024-06-28 01:23:04.907] First row returned from database to reader : (Fri Jun 28 01:23:04 2024)
+READER_1_3_1> BLKR_16019 [2024-06-28 01:23:04.908] Read [5] rows, read [0] error rows for source table [Authors] instance name [Authors]
+READER_1_3_1> BLKR_16008 [2024-06-28 01:23:04.909] Reader run completed.
+READER_1_2_1> RR_4050 [2024-06-28 01:23:04.921] First row returned from database to reader : (Fri Jun 28 01:23:04 2024)
+READER_1_2_1> BLKR_16019 [2024-06-28 01:23:04.921] Read [8] rows, read [0] error rows for source table [Books] instance name [Books]
+READER_1_2_1> BLKR_16008 [2024-06-28 01:23:04.921] Reader run completed.
+TRANSF_1_2_1> DBG_21077 [2024-06-28 01:23:04.921] Create joiner cache on master relation : (Fri Jun 28 01:23:04 2024)
+TRANSF_1_2_1> TE_7212 [2024-06-28 01:23:04.922] Increasing [Index Cache] size for transformation [Joiner] from [66268125] to [66268800].
+TRANSF_1_2_1> TE_7212 [2024-06-28 01:23:04.922] Increasing [Data Cache] size for transformation [Joiner] from [132536250] to [132536904].
+READER_1_1_1> RR_4050 [2024-06-28 01:23:04.922] First row returned from database to reader : (Fri Jun 28 01:23:04 2024)
+READER_1_1_1> BLKR_16019 [2024-06-28 01:23:04.922] Read [7] rows, read [0] error rows for source table [Editors] instance name [Editors]
+READER_1_1_1> BLKR_16008 [2024-06-28 01:23:04.922] Reader run completed.
+TRANSF_1_2_1> CMN_1690 [2024-06-28 01:23:04.942] Created new data file [/data2/home/cldagnt/SystemAgent/apps/Data_Integration_Server/data/012MMN0E00000000005P/012MMN/cache/PMJNR793007600_8_0.dat] and index file [/data2/home/cldagnt/SystemAgent/apps/Data_Integration_Server/data/012MMN0E00000000005P/012MMN/cache/PMJNR793007600_8_0.idx] for Joiner [Joiner].
+TRANSF_1_2_1> DBG_21214 [2024-06-28 01:23:04.944] Finished joiner cache on master relation : (Fri Jun 28 01:23:04 2024)
+TRANSF_1_2_1> DBG_21216 [2024-06-28 01:23:04.944] Finished transformations for Source Qualifier [Book]. Total errors [0] 
+TRANSF_1_3_1> DBG_21603 [2024-06-28 01:23:04.944] Open master relation cache for detail joiner : (Fri Jun 28 01:23:04 2024)
+TRANSF_1_3_1> DBG_21077 [2024-06-28 01:23:04.944] Create joiner cache on master relation : (Fri Jun 28 01:23:04 2024)
+TRANSF_1_3_1> TE_7212 [2024-06-28 01:23:04.945] Increasing [Index Cache] size for transformation [Joiner1] from [66268125] to [66268800].
+TRANSF_1_3_1> TE_7212 [2024-06-28 01:23:04.945] Increasing [Data Cache] size for transformation [Joiner1] from [132536250] to [132536448].
+TRANSF_1_3_1> CMN_1690 [2024-06-28 01:23:04.958] Created new data file [/data2/home/cldagnt/SystemAgent/apps/Data_Integration_Server/data/012MMN0E00000000005P/012MMN/cache/PMJNR793007600_9_0.dat] and index file [/data2/home/cldagnt/SystemAgent/apps/Data_Integration_Server/data/012MMN0E00000000005P/012MMN/cache/PMJNR793007600_9_0.idx] for Joiner [Joiner1].
+TRANSF_1_3_1> DBG_21214 [2024-06-28 01:23:04.961] Finished joiner cache on master relation : (Fri Jun 28 01:23:04 2024)
+TRANSF_1_3_1> DBG_21215 [2024-06-28 01:23:04.961] Finished processing detail relation : (Fri Jun 28 01:23:04 2024)
+TRANSF_1_3_1> CMN_1795 [2024-06-28 01:23:04.961] The index cache size that would hold [8] input rows from the master for [Joiner], in memory, is [1600] bytes
+TRANSF_1_1_1> DBG_21603 [2024-06-28 01:23:04.961] Open master relation cache for detail joiner : (Fri Jun 28 01:23:04 2024)
+TRANSF_1_3_1> CMN_1794 [2024-06-28 01:23:04.961] The data cache size that would hold [8] input rows from the master for [Joiner], in memory, is [2976] bytes
+TRANSF_1_1_1> DBG_21215 [2024-06-28 01:23:04.961] Finished processing detail relation : (Fri Jun 28 01:23:04 2024)
+TRANSF_1_1_1> CMN_1795 [2024-06-28 01:23:04.961] The index cache size that would hold [8] input rows from the master for [Joiner1], in memory, is [1600] bytes
+TRANSF_1_1_1> CMN_1794 [2024-06-28 01:23:04.961] The data cache size that would hold [8] input rows from the master for [Joiner1], in memory, is [6336] bytes
+WRITER_1_*_1> WRT_8167 [2024-06-28 01:23:04.964] Start loading table [Amitav_Books] at: Fri Jun 28 01:23:04 2024
+TRANSF_1_3_1> DBG_21216 [2024-06-28 01:23:04.965] Finished transformations for Source Qualifier [Authors]. Total errors [0] 
+TRANSF_1_1_1> DBG_21216 [2024-06-28 01:23:04.966] Finished transformations for Source Qualifier [Editors]. Total errors [0] 
+WRITER_1_*_1> WRT_8168 [2024-06-28 01:23:07.567] End loading table [Amitav_Books] at: Fri Jun 28 01:23:07 2024
+WRITER_1_*_1> WRT_8141 [2024-06-28 01:23:08.128] 
+Commit on end-of-data  Fri Jun 28 01:23:07 2024
+===================================================
+
+WRT_8036 Target: Amitav_Books (Instance Name: [Amitav_Books])
+WRT_8038 Inserted rows - Requested: 7          Applied: 7          Rejected: 0          Affected: 7         
+
+WRITER_1_*_1> WRT_8035 [2024-06-28 01:23:08.129] Load complete time: Fri Jun 28 01:23:07 2024
+
+LOAD SUMMARY
+============
+
+WRT_8036 Target: Amitav_Books (Instance Name: [Amitav_Books])
+WRT_8038 Inserted rows - Requested: 7          Applied: 7          Rejected: 0          Affected: 7         
+
+
+WRITER_1_*_1> WRT_8043 [2024-06-28 01:23:08.129] *****END LOAD SESSION*****
+WRITER_1_*_1> WRT_8006 [2024-06-28 01:23:08.429] Writer run completed.
+MANAGER> PETL_24031 [2024-06-28 01:23:08.434] 
+***** RUN INFO FOR TGT LOAD ORDER GROUP [1], CONCURRENT SET [1] *****
+Thread [READER_1_1_1] created for [the read stage] of partition point [Editors] has completed.
+	Total Run Time = [1.252554] secs
+	Total Idle Time = [0.000000] secs
+	Busy Percentage = [100.000000]
+Thread [TRANSF_1_1_1] created for [the transformation stage] of partition point [Editors] has completed. The total run time was insufficient for any meaningful statistics.
+Thread [READER_1_2_1] created for [the read stage] of partition point [Book] has completed.
+	Total Run Time = [1.252133] secs
+	Total Idle Time = [0.000000] secs
+	Busy Percentage = [100.000000]
+Thread [TRANSF_1_2_1] created for [the transformation stage] of partition point [Book] has completed. The total run time was insufficient for any meaningful statistics.
+Thread [READER_1_3_1] created for [the read stage] of partition point [Authors] has completed.
+	Total Run Time = [1.252413] secs
+	Total Idle Time = [0.000000] secs
+	Busy Percentage = [100.000000]
+Thread [TRANSF_1_3_1] created for [the transformation stage] of partition point [Authors] has completed. The total run time was insufficient for any meaningful statistics.
+Thread [WRITER_1_*_1] created for [the write stage] of partition point [Amitav_Books] has completed.
+	Total Run Time = [3.464780] secs
+	Total Idle Time = [0.000000] secs
+	Busy Percentage = [100.000000]
+
+MANAGER> PETL_24005 [2024-06-28 01:23:08.440] Starting post-session tasks. : (Fri Jun 28 01:23:08 2024)
+POST-SESS> PETL_24091 [2024-06-28 01:23:08.440] Thread [POST-SESS] has the ID [12].
+MANAGER> PETL_24029 [2024-06-28 01:23:08.442] Post-session task completed successfully. : (Fri Jun 28 01:23:08 2024)
+MAPPING> TM_6018 [2024-06-28 01:23:08.443] The session completed with [0] row transformation errors. 
+MANAGER> TE_7216 [2024-06-28 01:23:08.444] Deleting cache files [/data2/home/cldagnt/SystemAgent/apps/Data_Integration_Server/data/012MMN0E00000000005P/012MMN/cache/PMJNR793007600_9_0.dat] for transformation [Joiner1].
+MANAGER> TE_7216 [2024-06-28 01:23:08.445] Deleting cache files [/data2/home/cldagnt/SystemAgent/apps/Data_Integration_Server/data/012MMN0E00000000005P/012MMN/cache/PMJNR793007600_9_0.idx] for transformation [Joiner1].
+MANAGER> TE_7216 [2024-06-28 01:23:08.446] Deleting cache files [/data2/home/cldagnt/SystemAgent/apps/Data_Integration_Server/data/012MMN0E00000000005P/012MMN/cache/PMJNR793007600_8_0.dat] for transformation [Joiner].
+MANAGER> TE_7216 [2024-06-28 01:23:08.446] Deleting cache files [/data2/home/cldagnt/SystemAgent/apps/Data_Integration_Server/data/012MMN0E00000000005P/012MMN/cache/PMJNR793007600_8_0.idx] for transformation [Joiner].
+MANAGER> PETL_24002 [2024-06-28 01:23:09.361] Parallel Pipeline Engine finished.
+DIRECTOR> PETL_24012 [2024-06-28 01:23:09.361] Session run completed successfully.
+DIRECTOR> TM_6022 [2024-06-28 01:23:09.361] 
+
+SESSION LOAD SUMMARY
+================================================
+
+DIRECTOR> TM_6252 [2024-06-28 01:23:09.361] Source Load Summary.
+DIRECTOR> CMN_1740 [2024-06-28 01:23:09.361] Table: [Editors] (Instance Name: [Editors] Instance UI Name: [Editors])
+	 Output Rows [7], Affected Rows [7], Applied Rows [7], Rejected Rows [0]
+DIRECTOR> CMN_1740 [2024-06-28 01:23:09.361] Table: [Book] (Instance Name: [Book] Instance UI Name: [Book])
+	 Output Rows [8], Affected Rows [8], Applied Rows [8], Rejected Rows [0]
+DIRECTOR> CMN_1740 [2024-06-28 01:23:09.361] Table: [Authors] (Instance Name: [Authors] Instance UI Name: [Authors])
+	 Output Rows [5], Affected Rows [5], Applied Rows [5], Rejected Rows [0]
+DIRECTOR> TM_6253 [2024-06-28 01:23:09.361] Target Load Summary.
+DIRECTOR> CMN_1740 [2024-06-28 01:23:09.361] Table: [Amitav_Books] (Instance Name: [Amitav_Books] Instance UI Name: [Target])
+	 Output Rows [7], Affected Rows [7], Applied Rows [7], Rejected Rows [0]
+DIRECTOR> TM_6023 [2024-06-28 01:23:09.361] 
+===================================================
+
+DIRECTOR> TM_6020 [2024-06-28 01:23:09.361] Session [s_mtt_012MMN0Z000000000005] completed at [Fri Jun 28 01:23:09 2024].
