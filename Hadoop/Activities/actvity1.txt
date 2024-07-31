@@ -5,7 +5,7 @@ vim txtFile.txt
 vim csvFile.csv
 
 # Make a textData folder on the HDFS
-hdfs dfs -mkdir /user/nagendra/textData
+hdfs dfs -mkdir /user/kamitav/textData
 
 # Copy the TXT file, txtFile.txt, into the textData folder in the HDFS
 hdfs dfs -put ./txtFile.txt /user/nagendra/textData
